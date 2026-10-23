@@ -1,0 +1,15 @@
+name: MicToggle
+version: ${project.version}
+main: me.mictoggle.MicTogglePlugin
+api-version: '1.21'
+depend: [voicechat]
+description: Bật/tắt mic bằng lệnh cho người chơi Simple Voice Chat (kể cả Bedrock/PE qua Geyser)
+commands:
+  mic:
+    description: Bật hoặc tắt mic
+    usage: /mic <on|off|toggle>
+    permission: mictoggle.use
+permissions:
+  mictoggle.use:
+    description: Cho phép dùng /mic
+    default: true
